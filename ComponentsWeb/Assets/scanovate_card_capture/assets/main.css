@@ -22,16 +22,21 @@
 
 
 
-body {
-    /*background: black;*/
+/* body {    
+    height: 100%;
+    width: 100%;
+    font-family: var(--scanovate-card-capture-font);
+} */
+
+.body-card-capture {    
     height: 100%;
     width: 100%;
     font-family: var(--scanovate-card-capture-font);
 }
 
-hr {
+/* hr {
     width: 95%;
-}
+} */
 
 .scanovate-card-capture-index-loader {
     -webkit-mask-image: var(--scanovate-card-capture-loader-url);
@@ -55,7 +60,22 @@ hr {
 }
 
 
-section {
+/* section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+    background: #000000;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.section-card-capture {
     position: absolute;
     top: 0;
     left: 0;
@@ -265,7 +285,11 @@ section {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 550px) {
 
-    section {
+    /* section {
+        justify-content: center;
+    } */
+
+    .section-card-capture {
         justify-content: center;
     }
 
@@ -311,7 +335,17 @@ section {
 
 /*                                     SECOND PAGE                                       */
 
-main {
+/* main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+} */
+
+.main-card-capture {
     position: absolute;
     top: 0;
     left: 0;
@@ -326,9 +360,9 @@ main {
 /*    margin-bottom: 15px;*/
 /*}*/
 
-img {
-    /*margin-bottom: 20px;*/
-}
+/* img {
+    margin-bottom: 20px;
+} */
 
 .scanovate-card-capture-main-container {
     display: flex;
@@ -506,9 +540,9 @@ input[type=button] {
         text-align: center;
     }
 
-    p {
+    /* p {
         text-align: center;
-    }
+    } */
 
     .scanovate-card-capture-ok-button {
         width: 500px !important;
